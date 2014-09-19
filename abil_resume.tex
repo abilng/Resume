@@ -1,140 +1,164 @@
-% LaTeX resume using res.cls
-\documentclass[line,margin]{res} 
-%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
-%\usepackage{newcent}   % uses new century schoolbook postscript font 
-%\usepackage{hfoldsty}
-\setlength{\topmargin}{-0.6in}  % Start text higher on the page 
-\setlength{\textheight}{9.8in}  % increase textheight to fit more on a page
-\setlength{\headsep}{0.2in}     % space between header and text
-\setlength{\headheight}{12pt}   % make room for header
-\usepackage{fancyhdr}  % use fancyhdr package to get 2-line header
-\renewcommand{\headrulewidth}{0pt} % suppress line drawn by default by fancyhdr
-\lhead{\hspace*{-\sectionwidth}ABIL N GEORGE} % force lhead all the way left
-\rhead{Page \thepage}  % put page number at right
-\rfoot{www.abilng.in} 
-\cfoot{} % the footer is empty
-\pagestyle{fancy} % set pagestyle for the document
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\moderncvtheme[green]{classic}
+
+%Alternative commands% \ moderncvtheme:
+% \ Moderncvstyle{casual}
+% \{Green} moderncvcolor
+
+% Styles: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+% Color 'blue' (default), 'orange', 'green', 'red', 'purple', 'gray' and 'black'
 
 
+% Character encoding
+\usepackage[utf8]{inputenc}
 
+% The text width in relation to the width of the paper
+\usepackage[scale = 0.8]{geometry}
+\recomputelengths
+
+% If you do not want Pagination (one-page document is not numbered)
+% \{} nopagenumbers
+
+% Personal Details
+% Optional items you may delete or comment
+\firstname{Abil}
+\familyname{N George}
+%\title{Resume}               									% optional
+\address{Naithelloor House,Thalachira P.O Kottarakara}{691539 Kollam,Kerala,India}	% optional
+\mobile{+91-9497359361}								% optional
+\phone{+91-(474)-2402574}                      		% optional
+%\fax{+332~(4224)~7834~0134}                        	% optional
+\email{mail@abilng.in}                         		% optional
+\homepage{www.abilng.in}                   			% optional
+%\extrainfo{IIT Roll No:CS13M002}            		% optional
+%\photo[100pt]{penguin.jpg}   	% '100pt' is the height of the image is scaled
+%\quote{R. Stallman: Snow is so beautiful, it doesn't have to be useful.} % optional
+
+
+% -----------------------------------------------------------------------------
+% content of
+% ------------------------------------------------------------------------------
 \begin{document}
+\maketitle
 
-\name{\huge Abil N George}
-% \address used twice to have two lines of address
-%\address{\large Naithelloor House,\\Thalachira P O,\\Kottarakara,\\Kollam\\Pin:691546\\}
-%\address{\large www.abilng.in}
-\address{\large mail@abilng.in}
-\address{\large (+91)9497359361}
+\section{OBJECTIVE}
+To secure a promising, successful and challenging career in a reputed organization where my knowledge and skill can be effectively applied, enabling me to explore myself fully and realize my full potential.\\
 
-\thispagestyle{empty} % this page does not have a header
 
-\begin{resume}
-  
-  \section{OBJECTIVE}       
-  To secure a promising, successful and challenging career in a reputed organization where my knowledge and skill can be effectively applied, enabling me to explore myself fully and realize my full potential.\\
-  
-  \section{EDUCATION} 
-          {\bf Master of Technology,}\hfill {\it 2013-2015}\\
-          {\it Indian Institute of Technology Madras,India.\hfill(http://www.iitm.ac.in)} \\
-          Concentration: Computer Science \& Engineering \\
-          Expected Completion: Summer 2015.\\ 
-          CGPA (Till Now) : {\bf 8.8} \\\\
-          {\bf Bachelor of Technology,}\hfill {\it 2009-2013}\\
-          {\it University of kerala.}\\ 
-          {\it College Of Engineering, Trivandrum,Kerala,India.\hfill(http://www.cet.ac.in)} \\
-          Concentration: Computer Science \& Engineering \\
-          CGPA : {\bf 8.64} \\\\
-          {\bf All India Senior School Certificate Examination,}\hfill {\it 2009}\\        
-          {\it Central Board of Secondary Education.}\\
-          %          Institution :
-          {\it Jawahar Navodaya Vidyalaya,Pathanamthitta.}\hfill{\it(http://www.navodaya.nic.in)}\\
-          {\it JNV are Indian schools for talented students and form a part of the system of gifted education.}\\
-          Score       : {\bf 88.80\% } \\\\
-          {\bf All India Secondary School Examination,}\hfill {\it 2007}\\
-          {\it Central Board of Secondary Education.}\\
-          Institution : {\it Jawahar Navodaya Vidyalaya,Pathanamthitta.} \\ 
-          Score       : {\bf 89.60\% } \\
-	  \section{TECHNICAL \\ SKILLS} 
-		  {\it Languages :} C,C++,Java,Python,Bash\\-\hspace{15 mm} PHP{\it (preliminary knowledge)}\\
-		  {\it Operating Systems Worked:} GNU/Linux, Microsoft Windows XP/Vista,Windows 7/8,Mac OS X\\
-		  {\it Software Packages:} Eclipse, GCC, GDB,MATLAB.\\
-	  \section{EXPERIENCE}
-		  {\bf Software Development Engineer-Intern }\hfill {\it 2012-Summer } \\
-		  {\it Amazon.com,Chennai }
-		  
-		  Implemented an effective framework for automate testing of {\it Kindle Direct Publishing (KDP)} Web Interface.
-		  
-		  {\bf RSMT Algorithm Implementation-Intern }\hfill {\it 2012-Semester 6 } \\
-		  {\it GES Infotek, Trivandrum }
-		  
-		  The {\it Rectilinear Steiner Tree Problem (RSMT)} asks for a minimum length tree that interconnects a given set of points by only horizontal and vertical line segments, enabling the use of extra points. Implemented {\it FDP (Fast Dynamic Programming) Algorithm } For RSMT by {\it Ganley \& Cohoon } which is based on {\it Hwang’s theorem}\\
+\section{EDUCATION}
+%\cventry{year--year}{Degree}{Institution}{City}{ \textit{Grade} }{Description}  % arguments 3 to 6 can be left empty
+\cventry{2013-2015}{Master of Technology}{}{}{\hfill \textit{CGPA (Till Now):8.8}}
+{
+Indian Institute of Technology Madras,India.\hfill \url{http://www.iitm.ac.in}\\
+Concentration: Computer Science \& Engineering.\\
+Expected Completion: Summer 2015.\\
+}
+\cventry{2009-2013}{Bachelor of Technology}{}{}{\hfill \textit{CGPA : 8.64}}
+{
+University of kerala.\\
+College Of Engineering, Trivandrum,Kerala,India.\hfill\url{http://www.cet.ac.in}\\
+Concentration: Computer Science \& Engineering.\\
+}
+\cventry{2009}{All India Senior School Certificate Examination}{}{}{\hfill \textit{Score : 88.80\%}}
+{
+Central Board of Secondary Education.\\
+% Institution :
+Jawahar Navodaya Vidyalaya,Pathanamthitta.\hfill \url{http://www.navodaya.nic.in}\\
+\textit{JNV are Indian schools for talented students and form a part of the system of gifted education.}\\
+}
+\cventry{2007}{All India Secondary School Examination}{}{}{\hfill \textit{Score :89.60\%}}
+{
+Central Board of Secondary Education.\\
+Institution : Jawahar Navodaya Vidyalaya,Pathanamthitta. \\
+}
 
-\pagebreak 
-	  \section{ACADEMIC \\ PROJECTS}
-	    	  {\bf Machine Parsable RESTfull web API }\hfill {\it 2013-Semester 8}\\
-	          {\it https://github.com/abilng/sMash.it}\\\\
-	    	  A RESTful web API is a web API implemented using {\it HTTP }and the principles of {\it REST (Representational State Transfer)}.By using  a {\it Microformats }-like grammar that helps to annotate semantics into the already existing documentation of REST services doubling them as machine-readable descriptions. Moreover, these basic annotations help to link between RESTful services in the same domain and enable automatic discovery and composition(creating {\it Mashups }).Implemented using javascript,Python,nodejs\\
+\section{TECHNICAL SKILLS}
+\cvitem{Programming Languages}{C,C++, Java, Python, Bash, HTML, JavaScript, CSS, R \newline \textit{preliminary knowledge: } Node.js, PHP}
 
-	    	  {\bf ARIA-Ethernet based public announcement system}\hfill {\it 2012-Semester 7}\\
-	          {\it https://github.com/AriaCET/}\\\\
-	    	  ARIA {\it (Asterisk RadIo Architecture)} is Ethernet based public announcement system using SIP.Funded by {\it Center For Engineering Reasearch And Development(CERD), Govt. Of Kerala}\\
-	                          
-              {\bf BOINCr-Graphical Interface to manage BOINC projects}\hfill {\it 2011-Semester 5}\\
-	          {\it https://github.com/dbalan/miniproject}\\\\
-	     	  A graphical interface to manage a {\it BOINC project}, written in {\it Java}.\\
-	     	  The {\it Berkeley Open Infrastructure for Network Computing }(BOINC) is an open source middle-ware system for volunteer and grid computing. The {\it BOINCr} provide a graphical interface to control BOINC server and to allow easy deployment of BOINC apps and work units.\\\\	
-	                 
-	  \section{SKILLS \& HOBBIES}
-	          {\bf Languages}
-	          \begin{itemize} \itemsep -2pt
-	          \item English
-	          \item Malayalam
-	          \end{itemize}
-	          {\bf Personal Skills}
-	          \begin{itemize} \itemsep -2pt
-	          \item Disciplined, dedicated and hard working with an ability to easily adapt to changing work environment.
-	          \item Keen learner with ability to learn and imbibe new knowledge.
-	          \item Able to work independently/ Together in a team.
-	          \end{itemize}
-	          {\bf Hobbies}
-	          \begin{itemize} \itemsep -2pt
-	          \item Listening to Music
-	          \item Aquaculture(ornamental-fish)
-	          \item Reading
-	          \item contributing to wikipedia 
-	          \end{itemize}
-	          \vspace{10 mm}                                 
-\pagebreak          
-     \section{PERSONAL \\ DETAILS}
-	  \begin{tabular}{ l l }
-	    %{\bf Name:} &Abil N George\\
-	    {\bf Date of Birth:}&05 August 1991\\
-	    %{\bf Age:} &21\\
-	    {\bf Nationality:}&Indian\\
-	    %{\bf Father name:}&George Kutty N A \\
-	    % &{\it (Ex Servicemen)}\\
-	    %{\bf Mother Name:}&L Leelamma \\
-	    % &{\it (Teacher-Headmistress)}\\
-	    %{\bf Marital Status:} &Single\\
-	    {\bf Permanent Address}& \\
-	    &Naithelloor House,\\
-	    &Thalachira P O,\\
-	    &Kottarakara,\\
-	    &Kollam\\
-	    &Pin:691546\\
-	    {\bf Phone:}& \\
-	    &Home: +91(474)2402574\\
-	    &Mobile: +919497359361\\
-            {\bf Website:} &www.abilng.in\\
-	    {\bf Email id:} &abilngeorge@gmail.com\\
-	    & mail@abilng.in\\
-	  \end{tabular}
-\end{resume}
+\cvitem{Operating Systems}{GNU/Linux, Microsoft Windows XP/Vista,Windows 7/8,Mac OS X}
+
+\cvcomputer{Software Packages}{Eclipse, GCC, GDB,MATLAB,\LaTeX{}}{Databases}{MySQL,Oracle DB}
+
+\section{EXPERIENCE}
+\subsection{Internships}
+\cventry{2012-Summer}{Software Development Engineer-Intern }{Amazon.com,Chennai}{}{}{Implemented an effective framework for automate testing of Kindle Direct Publishing (KDP) Web Interface.}
+
+\cventry{2011-12}{RSMT Algorithm Implementation-Intern}{GES Infotek, Trivandrum }{}{}
+{The \textit{Rectilinear Steiner Tree Problem (RSMT)} asks for a minimum length tree that interconnects a given set of points by only horizontal and vertical line segments, enabling the use of extra points. Implemented \textit{ FDP (Fast Dynamic Programming) Algorithm } For RSMT by \textit{ Ganley \& Cohoon } which is based on \textit{ Hwang’s theorem}}
+
+\section{PROJECTS}
+\subsection{Academic Projects}
+\cventry{2013}{Machine Parsable RESTfull web API}
+{\newline \url{https://github.com/abilng/sMash.it}}{}
+{\hfill \textit{JavaScript,Python,Node.js}}
+{A RESTful web API is a web API implemented using \textit{HTTP }and the principles of \textit{REST (Representational State Transfer)}.By using  a \textit{Microformats}-like grammar that helps to annotate semantics into the already existing documentation of REST services doubling them as machine-readable descriptions. Moreover, these basic annotations help to link between RESTful services in the same domain and enable automatic discovery and composition(creating \textit{Mashups})\newline}
+
+\cvitem{}{\hspace{3mm}\color{gray}{\textbf{Course Projects}}} 
+
+\cventry{2013 \newline Natural Language Processing}
+{Sentiment Analysis}{}{}{}
+{Sentiment analysis is a supervised learning technique for classifying and/or rating text documents or resources.We make use of a a labelled corpus(1000 positive \& 1000 negative cinema reviews) as training set.Used python-NLTK.\newline}
+
+\cventry{2014 \newline Concurrent Programming}
+{Static Race Detection And Scalability Analysis Of X10 Programs}{}{}{}
+{X10 programming language is an extended subset of java developed with an aim for
+scalable concurrency.Our Project is divided into two main parts.X10 Screen and X10 View.X10 Screen will identifies potential data races in the given parallel input code.While X10 View statically analyse the program's performance and hence analyse its scalability.\newline}
+
+\cventry{2011 \newline Database Design.}
+{BOINCr-Graphical Interface to manage BOINC projects}
+{\newline \url{https://github.com/dbalan/miniproject}}{}
+{\hfill \textit{Java,MySQL}}
+{A graphical interface to manage a \textit{BOINC project}.The \textit{Berkeley Open Infrastructure for Network Computing }(BOINC) is an open source middle-ware system for volunteer and grid computing. The \textit{BOINCr} provide a graphical interface to control BOINC server and to allow easy deployment of BOINC apps and work units.\newline}
+
+\subsection{Other Projects}
+
+\cventry{2012}{ARIA-Ethernet based public announcement system}
+{\newline \url{https://github.com/AriaCET/}\newline}{}
+{\hfill \textit{Python(flask),JavaScript,HTML,Bash,Qt(Python)}}
+{ARIA \textit{(Asterisk RadIo Architecture)} is an attempt to build a public announcement system over local network which is flexible.ARIA uses VoIP(Voice over IP) and SIP(Session Initiation Protocol).Originally developed for in house use at College of Engineering, Trivandrum(CET).Funded by \textit{Center For Engineering Reasearch And Development(CERD), Govt. Of Kerala}.\newline}
+
+\section{SKILLS \& HOBBIES}
+\subsection{Languages}
+\cvlistdoubleitem{English \textit{(Professional Proficiency)}}{Malayalam \textit{(Mother/Naive)}}
+\cvlistdoubleitem{Hindi \textit{(Working Proficiency)}}{Tamil \textit{(Elementary Proficiency)}}
+	           
+\subsection{Personal Skills}
+\cvlistitem{Disciplined, dedicated and hard working with an ability to easily adapt to changing work environment.}
+\cvlistitem{Keen learner with ability to learn and imbibe new knowledge.}
+\cvlistitem{Able to work independently/ Together in a team.}
+	          
+\subsection{Hobbies}
+
+\cvlistitem{contributing to wikipedia}
+\cvlistitem{Listening to Music}
+\cvlistitem{Reading}
+\cvlistitem{Aquaculture(ornamental-fish)}
+
+\section{PERSONAL DETAILS}
+\cvline{}{
+\begin{tabular}{ l l }
+%\labelitemi~ Name: &Abil N George\\
+\labelitemi~ Date of Birth:&05 August 1991\\
+%\labelitemi~ Age: &21\\
+\labelitemi~ Nationality:&Indian\\
+%\labelitemi~ Father name:&George Kutty N A \\
+% &\textit{(Ex Servicemen)}\\
+%\labelitemi~Mother Name:}&L Leelamma \\
+% &\textit{(Teacher-Headmistress)}\\
+%\labelitemi~ Marital Status:} &Single\\
+\labelitemi~ Permanent Address& \\
+&Naithelloor House,\\
+&Thalachira P O,\\
+&Kottarakara,\\
+&Kollam\\
+&Pin:691546\\
+\labelitemi~ Phone:& \\
+&Home: +91(474)2402574\\
+&Mobile: +919497359361\\
+\labelitemi~ Website: &www.abilng.in\\
+\labelitemi~ Email id: &abilngeorge@gmail.com\\
+& mail@abilng.in\\
+\end{tabular}}
+
 \end{document}
-
-
-
-
-
-
-
