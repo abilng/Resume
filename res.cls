@@ -248,6 +248,7 @@
     \leavevmode\hbox to \textwidth
       {\hfill\vbox{\hbox{\@addressone}
 		   \hbox{\@addresstwo}
+		   \hbox{\@addressthree}
 		  }%
       }\par
   }
@@ -494,10 +495,18 @@
 %
 \let\@addressone\relax
 \let\@addresstwo\relax
+\let\@addressthree\relax
 
 \def\address#1{
-  \@ifundefined{@addressone}{\def\@addressone{#1}}{\def\@addresstwo{#1}}}
+  \@ifundefined{@addressone}{\def\@addressone{#1}}
+  {\@ifundefined{@addresstwo}{\def\@addresstwo{#1}}{\def\@addressthree{#1}}}}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% use this to define your Phone, this may be called more than once.
+%
+%\def\phone#1{\def\@phone{#1}}
+
+%\def\@phone{}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % if you want to print your name and address is a slightly
 % different format than sugessted, then this can be used
