@@ -3,6 +3,7 @@
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 %\usepackage{newcent}   % uses new century schoolbook postscript font
 %\usepackage{hfoldsty}
+\usepackage{url}
 \setlength{\topmargin}{-0.6in}  % Start text higher on the page
 \setlength{\textheight}{9.8in}  % increase textheight to fit more on a page
 \setlength{\headsep}{0.2in}     % space between header and text
@@ -11,7 +12,7 @@
 \renewcommand{\headrulewidth}{0pt} % suppress line drawn by default by fancyhdr
 \lhead{\hspace*{-\sectionwidth}ABIL N GEORGE} % force lhead all the way left
 \rhead{Page \thepage}  % put page number at right
-\rfoot{www.abilng.in}
+\rfoot{\url{www.abilng.in}}
 \cfoot{} % the footer is empty
 \pagestyle{fancy} % set pagestyle for the document
 
@@ -24,7 +25,7 @@
 %\address{\large Naithelloor House,\\Thalachira P O,\\Kottarakara,\\Kollam\\Pin:691546\\}
 %\address{\large www.abilng.in}
 %\address{\large RollNo: CS13M002}
-\address{\large mail@abilng.in}
+\address{\large \url{mail@abilng.in}}
 \address{\large (+91)9497359361}
 \thispagestyle{empty} % this page does not have a header
 
@@ -64,40 +65,52 @@
   \textbf{ Software Development Engineer-Intern }\hfill \textit{2012-Summer } \\
   \textit{Amazon.com,Chennai }
 
-  Implemented an effective framework for automate testing of \textit{Kindle Direct Publishing (KDP)} Web Interface.
+  Implemented an effective framework for automated testing of \textit{Kindle Direct Publishing (KDP)} Web Interface.
 
   \textbf{ RSMT Algorithm Implementation-Intern(Part Time) }\hfill\textit{2011-12} \\
   \textit{GES Infotek, Trivandrum }
 
-  The \textit{Rectilinear Steiner Tree Problem (RSMT)} asks for a minimum length tree that interconnects a given set of points by only horizontal and vertical line segments, enabling the use of extra points. Implemented \textit{FDP (Fast Dynamic Programming) Algorithm } For RSMT by \textit{Ganley \& Cohoon } which is based on \textit{Hwang’s theorem}\\
+  The \textit{Rectilinear Steiner Tree Problem (RSMT)} asks for a minimum length tree that interconnects a given set of points by only horizontal and vertical line segments, enabling the use of extra points. Implemented \textit{FDP (Fast Dynamic Programming) Algorithm } For RSMT by \textit{Ganley \& Cohoon } which is based on \textit{Hwang’s theorem}.\\
 
   \pagebreak
   \section{PROJECTS}
+  
+  \textbf{Events Identification In Videos using DNNs}\hfill \textit{2014(ongoing)}\\
+  \textit{Guide:Dr. Hema A Murthy,Professor,IIT Madras}\\\\
+  Images and videos have become ubiquitous on the internet, which has encouraged the development of algorithms for various applications,including search and summarization.Aim is do a semantic-oriented video analysis system for the videos(game videos) with help of Deep Neural Network Models.\\
+
+  \textbf{Python-DNN - Tool-kit for Deep Neural Network}\hfill \textit{2014(ongoing)}\\
+  \textit{\url{https://github.com/IITM-DONLAB/python-dnn}}\\
+  \textit{Guide:Dr. Hema A Murthy,Professor,IIT Madras}\\\\
+  Python-DNN is a tool-kit for Deep Neural Networks which can run on GPU as well as CPU.It supports CNN,DBN(RBM),SDA and many other.\textit{Python-DNN} can be easily configurable by \textit{JSON}.It can be use also as a python library.\\\\
+
   \textbf{ Machine Parsable RESTfull web API }\hfill \textit{2013}\\
-  \textit{https://github.com/abilng/sMash.it}\\\\
+  \textit{\url{https://github.com/abilng/sMash.it}}\\
+  \textit{Guide:Dr. Abdul Nizar,Professor, College of Engineering Trivandrum}\\\\
   A RESTful web API is a web API implemented using \textit{HTTP }and the principles of \textit{REST (Representational State Transfer)}.By using  a \textit{Microformats }-like grammar that helps to annotate semantics into the already existing documentation of REST services doubling them as machine-readable descriptions. Moreover, these basic annotations help to link between RESTful services in the same domain and enable automatic discovery and composition(creating \textit{Mashups }).Implemented using javascript,Python,nodejs\\
 
   \textbf{ ARIA-Ethernet based public announcement system}\hfill \textit{2012}\\
-  \textit{https://github.com/AriaCET/}\\\\
-  ARIA \textit{(Asterisk RadIo Architecture)} is an attempt to build a public announcement system over local network which is flexible.ARIA uses VoIP(Voice over IP) and SIP(Session Initiation Protocol).Originally developed for in house use at College of Engineering, Trivandrum(CET).Funded by \textit{Center For Engineering Reasearch And Development(CERD), Govt. Of Kerala}\\
+  \textit{\url{https://github.com/AriaCET/}}\\
+  \textit{Guide:Dr. Rajasree M.S,Professor,College of Engineering Trivandrum}\\\\
+  ARIA \textit{(Asterisk RadIo Architecture)} is an attempt to build a public announcement system over local network which is flexible.ARIA uses VoIP(Voice over IP) and SIP(Session Initiation Protocol).Originally developed for in house use at College of Engineering, Trivandrum(CET).Funded by \textit{Center For Engineering Research And Development(CERD), Govt. Of Kerala}\\
 
 
   \section{COURSE \\ PROJECTS}
 
   \textbf{Sentiment Analysis}\hfill \textit{2013}\\
   \textit{Natural Language Processing}\\
-  Sentiment analysis is a supervised learning technique for classifying and/or rating text documents or resources.We make use of a a labelled corpus(1000 positive \& 1000 negative cinema reviews) as training set.Used python-NLTK.\newline
+  Sentiment analysis is a supervised learning technique for classifying and/or rating text documents or resources.We make use of a labelled corpus(1000 positive \& 1000 negative cinema reviews) as training set.Used python-NLTK.\newline
 
 
   \textbf{Static Race Detection And Scalability Analysis Of X10 Programs}\hfill\textit{2014}\\
   \textit{Concurrent Programming}\\
-  X10 programming language is an extended subset of java developed with an aim for
-  scalable concurrency.Our Project is divided into two main parts.X10 Screen and X10 View.X10 Screen will identifies potential data races in the given parallel input code.While X10 View statically analyse the program's performance and hence analyse its scalability.\newline
+  X10 programming language is an extended subset of Java developed with an aim for
+  scalable concurrency.Our Project is divided into two main parts.X10 Screen and X10 View.X10 Screen will identify potential data races in the given parallel input code.While X10 View statically analyse the program's performance and hence analyse its scalability.\newline
 
 
   \textbf{ BOINCr-Graphical Interface to manage BOINC projects}\hfill \textit{2011}\\
   \textit{Database Design}\\
-  \textit{https://github.com/dbalan/miniproject}\\
+  \textit{\url{https://github.com/dbalan/miniproject}}\\
   A graphical interface to manage a \textit{BOINC project}, written in \textit{Java}.\\
   The \textit{Berkeley Open Infrastructure for Network Computing }(BOINC) is an open source middle-ware system for volunteer and grid computing. The \textit{BOINCr} provide a graphical interface to control BOINC server and to allow easy deployment of BOINC apps and work units.\\\\
 
@@ -151,10 +164,3 @@
   \end{tabular}
 \end{resume}
 \end{document}
-
-
-
-
-
-
-
