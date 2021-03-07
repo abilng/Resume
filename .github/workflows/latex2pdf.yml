@@ -33,14 +33,20 @@ jobs:
         uses: xu-cheng/latex-action@master
         with:
           root_file: resume.tex
+      - name: Upload CV in PDF to the workflow tab
+        id: upload-workflow-tab
+        uses: actions/upload-artifact@v2
+        with:
+          name: resume.pdf
+          path: ./resume.pdf
       - name: Create release
         id: create_release
-        uses: actions/create-release@v1.0.0
+        uses: majkrzak/create-release@latest
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: ${{ github.ref }}
-          release_name: Resume
+          release_name: Resume ${{github.run_id}}
           draft: false
           prerelease: false
       - name: Upload release asset
