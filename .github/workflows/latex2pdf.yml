@@ -28,39 +28,29 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Set up Git repository
-        uses: actions/checkout@v2
-      - name: latex2pdf
-        id: compile-latex-document
-        uses: thomas-chauvet/latex2pdf-action@1.0.1
+        uses: actions/checkout@v1
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@master
         with:
-          output_dir: resume
-          main_latex_file: abil_resume.tex
-          ctan_packages: moderncv xargs bigfoot colortbl pgf fontawesome
-      - name: Upload CV in PDF to the workflow tab
-        id: upload-workflow-tab
-        uses: actions/upload-artifact@v2
-        with:
-          name: resume
-          path: resume/abil_resume.pdf
-      - name: Create Release
+          root_file: resume.tex
+      - name: Create release
         id: create_release
-        if: startsWith(github.ref, 'refs/tags/')
-        uses: actions/create-release@v1
+        uses: actions/create-release@v1.0.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
+          release_name: Resume
           draft: false
           prerelease: false
-      - name: Upload Release CV
+      - name: Upload release asset
         id: upload-release-asset
-        if: startsWith(github.ref, 'refs/tags/')
-        uses: actions/upload-release-asset@v1
+        uses: actions/upload-release-asset@v1.0.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: resume/abil_resume.pdf
+          asset_path: ./resume.pdf
           asset_name: resume.pdf
           asset_content_type: application/pdf
+
