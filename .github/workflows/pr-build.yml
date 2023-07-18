@@ -27,11 +27,11 @@ jobs:
         id: lint
         with:
           root_file: resume.tex
+          args: --check en --dict en_US.dict
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@master
         with:
           root_file: resume.tex
-          args: --check en --dict en_US.dict
       - name: Upload Linit
         id: upload-lint
         uses: actions/upload-artifact@v3
