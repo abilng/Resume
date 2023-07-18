@@ -45,11 +45,10 @@ jobs:
         if: github.event_name == 'pull_request'
       - name: Upload CV in PDF to the workflow tab
         id: upload-workflow-tab
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: resume.pdf
           path: ./resume.pdf
-        if: github.event_name != 'pull_request'
       - name: Release
         uses: marvinpinto/action-automatic-releases@latest
         with:
