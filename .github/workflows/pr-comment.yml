@@ -1,11 +1,11 @@
-name: Comment on Pull request
+name: PR-Comment
 
 on:
   workflow_run:
     types:
       - completed
     workflows:
-      - 'Create PR Artifacts'
+      - 'pr-build'
 
 jobs:
   comment:
